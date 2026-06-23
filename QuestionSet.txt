@@ -1,0 +1,51 @@
+🔹 Strings
+1. Reverse a string without using .reverse().
+2. Check if a string is a palindrome.
+3. Count the number of vowels in a string.
+4. Find the first non-repeating character in a string.
+5. Check if two strings are anagrams (without using .sort()).
+6. Find the longest word in a sentence.
+7. Implement string compression (e.g., "aaabbc" → "a3b2c1").
+
+🔹 Arrays
+1. Reverse an array without using .reverse().
+2. Find the maximum and minimum elements in an array.
+3. Remove duplicates from an array (without using Set).
+4. Rotate an array k times (cyclic rotation).
+5. Find the missing number in a sequence [1…n].
+6. Find the second largest element in an array.
+7. Flatten a nested array (without .flat()).
+8. Merge two sorted arrays into one sorted array.
+
+🔹 Numbers & Math
+1. Check if a number is prime.
+2. Find the factorial of a number.
+3. Generate the Fibonacci sequence up to n.
+4. Find the GCD (Greatest Common Divisor) of two numbers.
+5. Find the LCM (Least Common Multiple) of two numbers.
+
+🔹 Objects & Logic
+1. Count the frequency of elements in an array.
+2. Deep clone an object without using JSON.stringify.
+3. Group objects by a property (e.g., group people by age).
+4. Implement your own map() function.
+5. Implement your own filter() function.
+6. Implement your own reduce() function.
+
+🔹 Algorithms
+1. Implement binary search.
+2. Implement linear search.
+3. Implement bubble sort.
+4. Implement selection sort.
+5. Implement insertion sort.
+6. Implement quicksort.
+7. Implement merge sort.
+
+🔹 Advanced/Real-World
+1. Implement debounce.
+2. Implement throttle.
+3. Max profit from stock prices (buy/sell problem).
+4. Find two numbers in an array that sum to a target.
+5. Find all subsets of a set.
+6. Find the longest substring without repeating characters.
+7. Implement a simple LRU (Least Recently Used) cache.

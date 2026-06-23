@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      background-color: blanchedalmond;
+      padding: 1rem;
+    }
+
+    div ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      list-style: none;
+      gap: 1rem;
+    }
+
+    div ul li {
+      color: green;
+      background-color: beige;
+      padding: 0.5rem;
+    }
+  </style>
+
+  <body>
+    <div>
+      <ul id="list-items">
+        <li>Maggie</li>
+        <li>Noddles</li>
+        <li>Sev</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    // by using the querySelectorAll
+    // const items = document.querySelectorAll("#list-items li");
+    // items.forEach((item) => {
+    //   item.addEventListener("click", function () {
+    //     console.log(`List ${item.textContent} clicked`);
+    //     // console.log("clicked", this.textContext);
+    //   });
+    // });
+
+    //get by id
+    const items = document.getElementById("list-items");
+    items.addEventListener("click", (event) => {
+      if (event.target.tagName === "LI") {
+        console.log(`List ${event.target.textContent} clicked`);
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,11 @@
+Summary Roadmap Before Solving Problems
+Basics: Variables, Data Types, Operators
+Strings: Traversal, Reversing, Comparisons
+Arrays: Loops, Searching, Max/Min, Manual logic
+Objects: Frequency counters, grouping
+Functions: Closures, recursion
+Loops & Conditions: Nested loops, edge cases
+Math: Prime, Factorial, Fibonacci, GCD/LCM
+Sorting/Searching: Bubble, Selection, Insertion, Binary Search
+Recursion: Factorial, Flatten array, Subsets
+ES6+: Spread, Destructuring, Async/Await

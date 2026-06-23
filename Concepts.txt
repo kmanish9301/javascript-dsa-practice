@@ -1,0 +1,135 @@
+🔹 1.Variables & Data Types
+var, let, const (scope, redeclaration, hoisting).
+Primitive types (string, number, boolean, null, undefined, symbol, bigint).
+Reference types (object, array, function).
+
+***************************************************************************************
+***************************************************************************************
+🔹 2. Strings
+Iteration over strings.
+Manual reversing without .reverse().
+Comparing characters (ASCII values).
+
+let str = "hello";
+let rev = "";
+for (let i = str.length - 1; i >= 0; i--) {
+  rev += str[i];
+}
+console.log(rev); // "olleh"
+***************************************************************************************
+***************************************************************************************
+🔹 3. Arrays
+Accessing elements without built-in methods.
+Looping (for, while, for...of).
+Manual implementations (like finding max, sum, rotate, etc.).
+
+let arr = [3, 7, 1, 9, 4];
+let max = arr[0];
+for (let i = 1; i < arr.length; i++) {
+  if (arr[i] > max) max = arr[i];
+}
+console.log(max); // 9
+***************************************************************************************
+***************************************************************************************
+🔹 4. Objects
+Key-value storage, iteration with for...in.
+Frequency counters (useful for anagrams, duplicates).
+
+let str = "banana";
+let freq = {};
+for (let ch of str) {
+  freq[ch] = (freq[ch] || 0) + 1;
+}
+console.log(freq); // { b: 1, a: 3, n: 2 }
+***************************************************************************************
+***************************************************************************************
+🔹 5. Functions
+Normal vs Arrow functions.
+Parameters, default values, rest parameters.
+Closures (important for debounce/throttle).
+
+function counter() {
+  let count = 0;
+  return function() {
+    count++;
+    return count;
+  };
+}
+let c = counter();
+console.log(c()); // 1
+console.log(c()); // 2
+***************************************************************************************
+***************************************************************************************
+🔹 6. Loops & Conditions
+for, while, do...while.
+break, continue.
+Nested loops (important for patterns, substrings, matrix problems).
+
+✅ Example: Print all pairs of array elements:
+
+let arr = [1, 2, 3];
+for (let i = 0; i < arr.length; i++) {
+  for (let j = i + 1; j < arr.length; j++) {
+    console.log(arr[i], arr[j]);
+  }
+}
+***************************************************************************************
+***************************************************************************************
+🔹 7. Math & Numbers
+Modulus operator %.
+Integer division (using Math.floor).
+Prime check, factorial, Fibonacci.
+✅ Example: Check prime:
+
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i <= Math.sqrt(n); i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+console.log(isPrime(17)); // true
+***************************************************************************************
+***************************************************************************************
+🔹 8. Sorting & Searching (Basics)
+Bubble Sort, Selection Sort, Insertion Sort.
+Linear Search, Binary Search.
+
+✅ Example: Bubble sort:
+
+let arr = [5, 2, 9, 1];
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr.length - 1 - i; j++) {
+    if (arr[j] > arr[j+1]) {
+      [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
+    }
+  }
+}
+console.log(arr); // [1,2,5,9]
+***************************************************************************************
+***************************************************************************************
+🔹 9. Recursion
+Writing functions that call themselves.
+Used in factorial, Fibonacci, flattening arrays, tree problems.
+✅ Example: Factorial recursion:
+
+function factorial(n) {
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
+}
+console.log(factorial(5)); // 120
+***************************************************************************************
+***************************************************************************************
+🔹 10. ES6+ Concepts
+Destructuring, spread/rest operators.
+map, filter, reduce (even if you avoid inbuilt, know logic).
+Promises, async/await (for async problems).
+✅ Example: Spread operator:
+
+let arr1 = [1, 2];
+let arr2 = [...arr1, 3, 4];
+console.log(arr2); // [1,2,3,4]
+***************************************************************************************
+***************************************************************************************
+
+
